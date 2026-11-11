@@ -102,7 +102,7 @@ Exceptions
 .. module:: attrs.exceptions
 
 All exceptions are available from both ``attr.exceptions`` and ``attrs.exceptions`` and are the same thing.
-That means that it doesn't matter from from which namespace they've been raised and/or caught:
+That means that it doesn't matter from which namespace they've been raised and/or caught:
 
 .. doctest::
 
@@ -378,7 +378,7 @@ All objects from ``attrs.validators`` are also available from ``attr.validators`
       >>> C(41)
       Traceback (most recent call last):
          ...
-      ValueError: ("'x' must be => 42: 41")
+      ValueError: ("'x' must be >= 42: 41")
 
 .. autofunction:: attrs.validators.gt
 
@@ -442,7 +442,7 @@ All objects from ``attrs.validators`` are also available from ``attr.validators`
       >>> C("")
       Traceback (most recent call last):
          ...
-      ValueError: ("Length of 'x' must be => 1: 0")
+      ValueError: ("Length of 'x' must be >= 1: 0")
 
 .. autofunction:: attrs.validators.instance_of
 
